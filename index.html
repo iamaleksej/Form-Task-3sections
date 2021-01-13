@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Test Form 3 sections</title>
+    <link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>    
+</head>
+<body class="body">
+    <div class="wrapper">
+    	<div class="container">
+    		    <div class="button button_login">Зарегистрироваться</div>
+                <form method="POST" class="form">
+                    <span class="form__media-check-mob"></span>
+                    <div class="tabs tabs_top">
+                        <div class="tab tab1 tab_data opacity1" id="tab1" data-section="1">
+                            <img class="tab__image" src="img/tab1.png" alt="tab 1">
+                        </div>
+                        <div class="tab tab2 tab_load-img" id="tab2" data-section="2">
+                            <img class="tab__image" src="img/tab2.png" alt="tab 2">
+                        </div>  
+                        <div class="tab tab3 tab_apply-pass" id="tab3" data-section="3">
+                            <img class="tab__image" src="img/tab3.png" alt="tab 3">
+                        </div>
+                    </div>
+                    <div class="line-arrow margin-l_tab1" id="line-arrow"></div>
+                    <section class="section section1 section_data showed" data-section="1">
+                        <div class="field field_first-name">
+                            <label class="label field__label" for="form-firstname">Имя</label>
+                            <input class="input field__input field__input_first-name field_rounding_left-top" type="text" id="form-firstname">                             
+                        </div>
+                        <div class="field field_second-name">
+                            <label class="label field__label" for="form-secondname">Фамилия</label>
+                            <input class="input field__input field_rounding_right-top" type="text" id="form-secondname">                         
+                        </div>
+                        <div class="field field_email">
+                            <label class="label field__label" for="form-mail">Эл. почта</label>
+                            <input class="input field__input" type="email" id="form-mail">
+                            <p class="field__text_error" id="field__text_error">Адрес электронной почты указан неверно</p>
+                        </div>
+                        <div class="field field_password">
+                            <label class="label field__label" for="field_password">Пароль</label>
+                            <input class="input field__input field__input_password" type="password"  id="field_password" minlength="6" placeholder="min 6 symbols">
+                            <img class="field__img-check field__img-check_true" src="img/check-true.png" id="check-img" alt="">
+                            <img class="field__img-check field__img-check_false" src="img/check-false.png" id="check-img-x" alt="">
+                        </div>                                                        
+                    </section>
+                    <section class="section section2 section_load-img section_alone" data-section="2">
+                        <div class="load-img load-img-apply-pass">                      
+                            <label class="label load-img__label" for="form-file">Загрузить изображение</label>
+                            <input class="input load-img__input" id="form-file" type="file" name="form-file">
+                            <label class="load-img__label" for="form-file" id="form-file-label">
+                                <img class="load-img__img" src="img/load-img.png"  alt="">
+                            </label>
+                        </div>
+                    </section>
+                    <section class="section section3 section_apply-pass section_alone" data-section="3">
+                        <div class="apply-pass load-img-apply-pass">
+                            <label class="label apply-pass__label" for="apply-pass_password2">Подтвердите пароль</label>
+                            <input class="input apply-pass__input apply-pass__input_password" type="password" id="apply-pass_password2">
+                        </div>
+                    </section>
+                    <div class="btns-bottom">
+                        <div class="button btns-bottom__item button_cancel">Отменить</div>
+                        <div class="button btns-bottom__item button_prev">Назад</div>
+                        <div class="button btns-bottom__item button_next button_next_div">Продолжить</div>
+                        <button class="button btns-bottom__item button_next button_next_btn dis-none">Продолжить</button>
+                    </div>                   
+                </form>
+    	</div>
+    </div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>
